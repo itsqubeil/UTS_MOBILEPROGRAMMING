@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TENTANG APLIKASI"
+
+                android:textSize="70sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text=" Aplikasi Pendataan Alumni adalah sebuah sistem perangkat lunak yang dirancang untuk mengelola dan mendokumentasikan informasi para alumni dari institusi pendidikan seperti sekolah, perguruan tinggi, atau universitas. Aplikasi ini memungkinkan institusi untuk menyimpan, mengakses, dan memperbarui data alumni dengan mudah dan efisien.  Setiap alumni dapat membuat dan memperbarui profil pribadi mereka yang mencakup informasi seperti nama, alamat, nomor telepon, email, tahun masuk dan lulus, program studi, dan jurusan. Selain itu, alumni dapat berinteraksi melalui fitur jejaring yang memungkinkan komunikasi melalui forum diskusi, grup minat khusus, dan pesan langsung.  Aplikasi ini juga menyediakan fasilitas untuk melacak perjalanan karir alumni setelah lulus, mencakup posisi pekerjaan, perusahaan tempat bekerja, lokasi kerja, dan riwayat pekerjaan. Informasi ini berguna bagi institusi untuk memahami dampak pendidikan terhadap karir para alumni.  Selain itu, aplikasi ini memudahkan institusi untuk mengorganisir dan menginformasikan alumni tentang berbagai acara seperti reuni, seminar, atau workshop. Alumni dapat mendaftar dan mendapatkan pembaruan acara secara real-time.  Aplikasi ini juga memfasilitasi alumni dalam memberikan dukungan finansial kepada almamater mereka melalui fitur donasi, yang memudahkan alumni untuk memberikan kontribusi dan melacak donasi mereka.  Dengan alat analitik yang disediakan, institusi dapat menghasilkan laporan berdasarkan data alumni untuk keperluan akreditasi, evaluasi program pendidikan, dan pengembangan strategi peningkatan kualitas pendidikan.  Keamanan data alumni menjadi prioritas utama, dengan penggunaan enkripsi data dan protokol keamanan yang kuat untuk melindungi informasi pribadi dari akses yang tidak sah.  Secara keseluruhan, Aplikasi Pendataan Alumni membantu institusi pendidikan dalam membangun hubungan yang lebih baik dengan para alumni, memanfaatkan jaringan alumni untuk mendukung kegiatan akademik dan non-akademik, serta meningkatkan kualitas dan relevansi pendidikan yang diberikan. Alumni juga dapat tetap terhubung dengan almamater mereka dan memberikan kontribusi nyata bagi generasi mendatang." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
