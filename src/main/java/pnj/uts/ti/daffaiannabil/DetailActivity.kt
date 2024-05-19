@@ -91,6 +91,10 @@ class DetailActivity : AppCompatActivity() {
 
             if (isSuccess) {
                 Toast.makeText(this, "Data berhasil diperbarui", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, index::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+                finish()
             } else {
                 Toast.makeText(this, "Gagal memperbarui data", Toast.LENGTH_SHORT).show()
             }
@@ -104,6 +108,9 @@ class DetailActivity : AppCompatActivity() {
                             val dbHelper = Databasehelper(this)
                             dbHelper.deleteItem(nim.toString())
                             Toast.makeText(this, "Data berhasil dihapus", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, index::class.java)
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+                            startActivity(intent)
                             finish() // Selesai dan kembali ke Activity sebelumnya
                         }
 
@@ -117,6 +124,7 @@ class DetailActivity : AppCompatActivity() {
             builder.setMessage("Apakah Anda yakin ingin menghapus data ini?")
                 .setPositiveButton("Ya", dialogClickListener)
                 .setNegativeButton("Tidak", dialogClickListener).show()
+
         }
     }
         private fun showDatePickerDialog() {
