@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="65sp"
+    android:layout_marginBottom="50sp"
     tools:context=".profilFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,35 +14,36 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email: " />
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: " />
 
-    <TextView
-        android:id="@+id/textViewNim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NIM: " />
+        <TextView
+            android:id="@+id/textViewNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM: " />
 
-    <TextView
-        android:id="@+id/textViewNama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama: " />
+        <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama: " />
 
-    <TextView
-        android:id="@+id/textViewKelas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kelas: " />
+        <TextView
+            android:id="@+id/textViewKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas: " />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Logout"
+            android:backgroundTint="#68D2E8"/>
 
     </LinearLayout>
 

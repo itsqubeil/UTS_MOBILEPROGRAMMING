@@ -32,11 +32,11 @@ class Login : AppCompatActivity() {
 
             if (username == "admin" && password == "password") {
 
-                val sharedPreferences = getSharedPreferences("PRofil", Context.MODE_PRIVATE)
+                val sharedPreferences = getSharedPreferences("Profil", Context.MODE_PRIVATE)
                 val editor = sharedPreferences.edit()
                 editor.putString("email", "test@mail.com")
                 editor.putString("nim", "2207411029")
-                editor.putString("nama", "dapoeck")
+                editor.putString("nama", "Daffa Ian Nabil")
                 editor.putString("kelas", "4A")
                 editor.apply()
                 with(sharedPreferences.edit()) {
@@ -48,7 +48,7 @@ class Login : AppCompatActivity() {
                 val nama = sharedPreferences.getString("nama", "N/A")
                 val kelas = sharedPreferences.getString("kelas", "N/A")
 
-                Toast.makeText(this, "Login Successful!\nEmail: $email\nNIM: $nim\nName: $nama\nClass: $kelas", Toast.LENGTH_LONG).show()
+//                Toast.makeText(this, "Login Successful!\nEmail: $email\nNIM: $nim\nName: $nama\nClass: $kelas", Toast.LENGTH_LONG).show()
 
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()

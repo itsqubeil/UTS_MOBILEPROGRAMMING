@@ -46,9 +46,17 @@ class beritaFragment : Fragment() {
 
         // Sample news data
         val newsList = listOf(
-            NewsItem("News 1", R.drawable.haidarnyaleg, "Description 1"),
-            NewsItem("News 2", R.drawable.haidarnyaleg, "Description 2"),
-            NewsItem("News 3", R.drawable.gas2, "Description 3"),
+            NewsItem("Bye Bye, AI: How to turn off Google's annoying AI overviews and just get search results", R.drawable.news1, "Tired of Google's AI overviews and their bad, plagiarized advice? Here's how to avoid them in search."),
+            NewsItem("Huawei brings sanctions-busting Kirin 9000C CPU to desktop PCs to replace banned Intel Alder Lake chips", R.drawable.news2, "Huawei has announced a brand new pre-built OEM machine featuring China silicon. The latest change results from U.S. regulations preventing Huawei from using Intel hardware."),
+            NewsItem("Linux distros ban 'tainted' AI-generated code", R.drawable.news3, "Two major Linux distributions ban the contribution of AI-generated code to their open-source projects."),
+            NewsItem("Idle Windows XP and 2000 machines get infected with viruses within minutes of being exposed online", R.drawable.news4, "A YouTuber installs a Windows XP VM without using any basic security measures to see how many viruses the OS will get. Within minutes, the OS has several viruses infecting the VM."),
+            NewsItem("This giant Game Boy XL uses a Raspberry Pi 5 and has working buttons", R.drawable.news5, "Arnov Sharma is using a Raspberry Pi 5 to power this extra-large Game Boy, which features a custom 3D-printed shell and working buttons."),
+            NewsItem("Jailbroken coin-operated washing machines unlock unlimited free cycles and millions in funds", R.drawable.news6, "It can also be exploited to turn washing machines into a fire hazard as it bypasses safety restrictions."),
+            NewsItem("Enthusiast gets Windows XP running on an i486", R.drawable.news7, "Modded Windows Xp SP3 ISO (German) available on Archive.org."),
+            NewsItem("M4 iPad Pro teardown shows the M4 processor and Apple Logo heat spreader in the flesh", R.drawable.news8, "Phone Repair Guru opens and disassembles a 13-inch iPad Pro M4, and we are impressed."),
+            NewsItem("Baidu's breakthrough can meld GPUs from different brands into one AI training cluster", R.drawable.news9, "Baidu developed a system that will let it use GPUs from different brands and use it as a unified computing cluster for training LLMs."),
+            NewsItem("Asus vows to improve clarity surrounding warranty claims and astronomical hardware repair costs", R.drawable.news10, "The company is taking steps to make its warranty communication clearer for customers. But will that be enough to give Asus clients the service they deserve?"),
+
             // Add more news items as needed
         )
 

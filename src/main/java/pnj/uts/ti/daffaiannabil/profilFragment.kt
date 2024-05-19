@@ -45,7 +45,7 @@ class profilFragment : Fragment() {
 
         // Retrieve data from SharedPreferences
         val sharedPreferences =
-            requireActivity().getSharedPreferences("PRofil", Context.MODE_PRIVATE)
+            requireActivity().getSharedPreferences("Profil", Context.MODE_PRIVATE)
         val email = sharedPreferences.getString("email", "N/A")
         val nim = sharedPreferences.getString("nim", "N/A")
         val nama = sharedPreferences.getString("nama", "N/A")

@@ -3,7 +3,7 @@
     <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item
             android:id="@+id/menu_tambah"
-            android:title="Tambah Menu" />
+            android:title="Tambah Data" />
         <item
             android:id="@+id/menu_data_alumni"
             android:title="Menu Data Alumni" />

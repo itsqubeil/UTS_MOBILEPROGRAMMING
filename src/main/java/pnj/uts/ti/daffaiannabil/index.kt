@@ -1,5 +1,7 @@
 package pnj.uts.ti.daffaiannabil
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -23,6 +25,7 @@ class index : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -56,17 +59,27 @@ class index : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menu_tambah -> {
-                // Logika untuk menangani klik pada opsi Tambah
+                val intent = Intent(this, AddDataActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.menu_data_alumni -> {
-                // Logika untuk menangani klik pada opsi Menu Data Alumni
+                val intent = Intent(this, ReadDataActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.menu_logout -> {
-                // Logika untuk menangani klik pada opsi Logout
+                val sharedPreferences = getSharedPreferences("Profil", Context.MODE_PRIVATE)
+                sharedPreferences.edit().clear().apply()
+
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent)
+
+
+                finish()
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
